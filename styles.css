@@ -4,7 +4,15 @@ main {
   border: 2px solid seagreen;
 }
 
+.main-content {
+  width: 70%;
+}
+
 .photo-content {
   display: block;
-  width: 70%;
+  width: 100%;
+}
+
+nav {
+  width: 30%;
 }
