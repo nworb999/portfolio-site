@@ -15,6 +15,12 @@ main {
   border: 2px solid pink;
 }
 
+nav a {
+  display: block;
+  color: royalblue;
+  margin-bottom: 12px;
+}
+
 nav {
   width: 30%;
   border: 2px solid salmon;
