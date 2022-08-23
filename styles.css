@@ -15,6 +15,10 @@ main {
   border: 2px solid pink;
 }
 
+.mini-menu-container:hover .mini-menu-content {
+  display: block;
+}
+
 .mini-menu-content {
   display: none;
 }
