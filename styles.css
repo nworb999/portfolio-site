@@ -3,3 +3,8 @@ main {
   width: 100%;
   border: 2px solid seagreen;
 }
+
+.photo-content {
+  display: block;
+  width: 70%;
+}
