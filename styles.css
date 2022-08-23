@@ -1,18 +1,21 @@
 main {
   display: flex;
   width: 100%;
-  border: 2px solid seagreen;
+  border: 2px solid grey;
 }
 
 .main-content {
   width: 70%;
+  border: 2px solid rebeccapurple;
 }
 
 .photo-content {
   display: block;
   width: 100%;
+  border: 2px solid pink;
 }
 
 nav {
   width: 30%;
+  border: 2px solid salmon;
 }
