@@ -4,6 +4,38 @@ main {
   border: 2px solid grey;
 }
 
+nav {
+  width: 30%;
+  border: 2px solid salmon;
+}
+
+ul,
+nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+nav li {
+  margin-bottom: 13px;
+}
+
+.menu-trigger {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.menu-secondary {
+  margin-left: 13px;
+  margin-top: 13px;
+  margin-bottom: 16px;
+}
+
 .main-content {
   width: 70%;
   border: 2px solid rebeccapurple;
@@ -13,23 +45,4 @@ main {
   display: block;
   width: 100%;
   border: 2px solid pink;
-}
-
-.mini-menu-container:hover .mini-menu-content {
-  display: block;
-}
-
-.mini-menu-content {
-  display: none;
-}
-
-nav a {
-  display: block;
-  color: royalblue;
-  margin-bottom: 12px;
-}
-
-nav {
-  width: 30%;
-  border: 2px solid salmon;
 }
