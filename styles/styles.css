@@ -19,6 +19,12 @@ nav {
 a:hover,
 .menu-trigger:hover {
   font-weight: bold;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
 }
 
 li {
@@ -32,6 +38,7 @@ nav li {
 
 nav a {
   text-decoration: none;
+  color: black;
 }
 
 .menu-trigger {
