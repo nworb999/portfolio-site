@@ -16,6 +16,11 @@ nav {
   margin: 0;
 }
 
+a:hover,
+.menu-trigger:hover {
+  font-weight: bold;
+}
+
 li {
   display: list-item;
   text-align: -webkit-match-parent;
