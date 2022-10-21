@@ -1,0 +1,61 @@
+main {
+  display: flex;
+  width: 100%;
+  border: 2px solid grey;
+}
+
+nav {
+  width: 30%;
+  border: 2px solid salmon;
+}
+
+ul,
+nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+nav li {
+  margin-bottom: 13px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.menu-trigger {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.menu-secondary {
+  display: none;
+  margin-left: 13px;
+  margin-top: 13px;
+  margin-bottom: 16px;
+}
+
+.menu-secondary:hover {
+  display: block;
+}
+
+nav li:last-child {
+  margin-bottom: 0;
+}
+
+.main-content {
+  width: 70%;
+  border: 2px solid rebeccapurple;
+}
+
+.photo-content {
+  display: block;
+  width: 100%;
+  border: 2px solid pink;
+}
