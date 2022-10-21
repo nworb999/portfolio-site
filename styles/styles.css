@@ -25,15 +25,28 @@ nav li {
   margin-bottom: 13px;
 }
 
+nav a {
+  text-decoration: none;
+}
+
 .menu-trigger {
   display: inline-block;
   cursor: pointer;
 }
 
 .menu-secondary {
+  display: none;
   margin-left: 13px;
   margin-top: 13px;
   margin-bottom: 16px;
+}
+
+.menu-secondary:hover {
+  display: block;
+}
+
+nav li:last-child {
+  margin-bottom: 0;
 }
 
 .main-content {
