@@ -9,6 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 .container {
@@ -49,7 +50,18 @@ nav {
   width: 100%;
   border: 2px solid salmon;
   display: block;
-  font-size: 1.2em;
+}
+
+.single {
+  columns: 1;
+}
+
+.double {
+  columns: 2;
+}
+
+.triple {
+  columns: 3;
 }
 
 ul,
