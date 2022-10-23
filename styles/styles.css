@@ -1,6 +1,24 @@
-main {
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -ms-flex-align: start;
+  -webkit-box-align: start;
+  align-items: flex-start;
   border: 2px solid grey;
 }
 
@@ -20,6 +38,13 @@ a:hover,
 .menu-trigger:hover {
   font-weight: bold;
   color: black;
+}
+
+a:active,
+.menu-trigger:active {
+  font-weight: bold;
+  color: palevioletred;
+  text-decoration: wavy;
 }
 
 a:visited {
