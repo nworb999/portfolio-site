@@ -1,12 +1,67 @@
-main {
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -ms-flex-align: start;
+  -webkit-box-align: start;
+  align-items: flex-start;
   border: 2px solid grey;
 }
 
+.left {
+  border: 2px solid green;
+  width: 800px;
+}
+
+.right {
+  border: 2px solid yellow;
+}
+
+@media only screen and (min-width: 1000px) {
+  .left {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  .left,
+  .right {
+    display: inline-block;
+    vertical-align: top;
+    padding: 40px;
+  }
+}
+
 nav {
-  width: 30%;
+  width: 100%;
   border: 2px solid salmon;
+  display: block;
+}
+
+.single {
+  columns: 1;
+}
+
+.double {
+  columns: 2;
+}
+
+.triple {
+  columns: 3;
 }
 
 ul,
@@ -14,6 +69,24 @@ nav {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+a:hover,
+.menu-trigger:hover {
+  font-weight: bold;
+  color: black;
+}
+
+a:active,
+.menu-trigger:active {
+  font-weight: bold;
+  color: palevioletred;
+  text-decoration: wavy;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
 }
 
 li {
@@ -27,6 +100,7 @@ nav li {
 
 nav a {
   text-decoration: none;
+  color: black;
 }
 
 .menu-trigger {
@@ -49,7 +123,7 @@ nav li:last-child {
   margin-bottom: 0;
 }
 
-.main-content {
+.right-content {
   width: 70%;
   border: 2px solid rebeccapurple;
 }
