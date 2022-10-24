@@ -30,7 +30,7 @@ p {
 
 .left {
   border: 2px solid green;
-  flex: 1 450px;
+  flex: 1 400px;
 }
 
 .right {
@@ -139,6 +139,13 @@ nav li:last-child {
 .triple {
   margin-top: 4px;
   padding: 1rem;
+}
+
+.stacked {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+  row-gap: 1rem;
 }
 
 .content {
