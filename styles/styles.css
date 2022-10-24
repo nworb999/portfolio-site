@@ -30,12 +30,12 @@ p {
 
 .left {
   border: 2px solid green;
-  width: 800px;
+  flex: 1 450px;
 }
 
 .right {
   border: 2px solid yellow;
-  width: auto;
+  width: 100%;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -43,6 +43,7 @@ p {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    padding: 40px;
   }
   .left,
   .right {
@@ -140,7 +141,7 @@ nav li:last-child {
   padding: 1rem;
 }
 
-.photo-content {
+.content {
   display: block;
   width: 100%;
   border: 2px solid pink;
