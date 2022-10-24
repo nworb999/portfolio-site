@@ -12,6 +12,11 @@ body {
   font-size: 16px;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,6 +35,7 @@ body {
 
 .right {
   border: 2px solid yellow;
+  width: auto;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -42,7 +48,6 @@ body {
   .right {
     display: inline-block;
     vertical-align: top;
-    padding: 40px;
   }
 }
 
@@ -124,8 +129,15 @@ nav li:last-child {
 }
 
 .right-content {
-  width: 70%;
+  width: 100%;
   border: 2px solid rebeccapurple;
+}
+
+.right-content .single,
+.double,
+.triple {
+  margin-top: 4px;
+  padding: 1rem;
 }
 
 .photo-content {
