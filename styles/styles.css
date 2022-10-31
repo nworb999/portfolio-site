@@ -30,7 +30,7 @@ p {
 
 .left {
   border: 2px solid green;
-  flex: 1 450px;
+  flex: 1 400px;
 }
 
 .right {
@@ -80,19 +80,15 @@ nav {
 a:hover,
 .menu-trigger:hover {
   font-weight: bold;
-  color: black;
+  color: palevioletred;
 }
 
 a:active,
+.active,
 .menu-trigger:active {
   font-weight: bold;
-  color: palevioletred;
-  text-decoration: wavy;
-}
-
-a:visited {
-  text-decoration: none;
   color: black;
+  text-decoration: wavy;
 }
 
 li {
@@ -139,6 +135,13 @@ nav li:last-child {
 .triple {
   margin-top: 4px;
   padding: 1rem;
+}
+
+.stacked {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+  row-gap: 1rem;
 }
 
 .content {
