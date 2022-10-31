@@ -80,19 +80,15 @@ nav {
 a:hover,
 .menu-trigger:hover {
   font-weight: bold;
-  color: black;
+  color: palevioletred;
 }
 
 a:active,
+.active,
 .menu-trigger:active {
   font-weight: bold;
-  color: palevioletred;
-  text-decoration: wavy;
-}
-
-a:visited {
-  text-decoration: none;
   color: black;
+  text-decoration: wavy;
 }
 
 li {
