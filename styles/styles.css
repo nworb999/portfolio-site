@@ -105,6 +105,10 @@ nav a {
   color: black;
 }
 
+.right-content a {
+  color: blue;
+}
+
 .menu-trigger {
   display: inline-block;
   cursor: pointer;
@@ -127,6 +131,7 @@ nav li:last-child {
 
 .right-content {
   width: 100%;
+  line-height: 1.5rem;
   border: 2px solid rebeccapurple;
 }
 
@@ -148,4 +153,12 @@ nav li:last-child {
   display: block;
   width: 100%;
   border: 2px solid pink;
+}
+
+ul.content {
+  list-style-type: disc;
+}
+
+.content li {
+  margin: 1rem;
 }
