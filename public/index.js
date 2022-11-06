@@ -11,16 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
       var panel = this.nextElementSibling;
       if (panel.style.display === "block") {
         panel.style.display = "none";
-      }
-      if (panel.style.display !== "none") {
-        panel.style.display = "block";
-        e.stopPropagation();
-      }
-      if (this.className.contains(" active")) {
-        panel.style.display = "block";
       } else {
         panel.style.display = "block";
-        e.stopPropagation();
       }
     });
   }
