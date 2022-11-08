@@ -25,16 +25,16 @@ p {
   -ms-flex-align: start;
   -webkit-box-align: start;
   align-items: flex-start;
-  border: 2px solid grey;
+  /* border: 2px solid grey; */
 }
 
 .left {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   flex: 1 400px;
 }
 
 .right {
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   width: 100%;
 }
 
@@ -54,7 +54,7 @@ p {
 
 nav {
   width: 100%;
-  border: 2px solid salmon;
+  /* border: 2px solid salmon; */
   display: block;
 }
 
@@ -80,14 +80,14 @@ nav {
 a:hover,
 .menu-trigger:hover {
   font-weight: bold;
-  color: palevioletred;
+  font-style: italic;
 }
 
 a:active,
 .active,
 .menu-trigger:active {
   font-weight: bold;
-  color: black;
+  color: palevioletred;
   text-decoration: wavy;
 }
 
@@ -132,7 +132,7 @@ nav li:last-child {
 .right-content {
   width: 100%;
   line-height: 1.5rem;
-  border: 2px solid rebeccapurple;
+  /* border: 2px solid rebeccapurple; */
 }
 
 .right-content .single,
@@ -152,7 +152,7 @@ nav li:last-child {
 .content {
   display: block;
   width: 100%;
-  border: 2px solid pink;
+  /* border: 2px solid pink; */
 }
 
 ul.content {
