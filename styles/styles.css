@@ -152,7 +152,15 @@ nav li:last-child {
 .content {
   display: block;
   width: 100%;
+  padding: 1rem;
+  padding-left: 0rem;
+  padding-right: 2rem;
   /* border: 2px solid pink; */
+}
+
+.right-content p {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 ul.content {
