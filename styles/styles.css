@@ -28,30 +28,32 @@ p {
   /* border: 2px solid grey; */
 }
 
-.left {
-  /* border: 2px solid green; */
-  flex: 1 400px;
-}
-
-.right {
-  /* border: 2px solid yellow; */
-  width: 100%;
-}
-
 iframe {
   width: 50%;
   margin: 10px;
 }
 
-@media (max-width: 1000px) {
-  .right-content {
+@media (min-width: 769px) {
+  .right {
     flex-direction: column;
+    columns: 1;
   }
 
-  .single,
   .double,
   .triple {
     columns: 1;
+  }
+
+  .single {
+    columns: 1;
+  }
+
+  .double {
+    columns: 2;
+  }
+
+  .triple {
+    columns: 3;
   }
 
   iframe {
@@ -64,29 +66,46 @@ iframe {
   position: sticky;
   top: 0;
   padding: 40px;
+  /* border: 2px solid green; */
+  flex: 1 400px;
 }
+
 .left,
 .right {
   display: inline-block;
   vertical-align: top;
+  /* border: 2px solid yellow; */
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .right {
+    flex-direction: column;
+    columns: 1;
+  }
+  .left {
+    flex: 1 100px;
+    padding: 20px;
+    font-size: x-small;
+  }
+
+  .single,
+  .double,
+  .triple {
+    columns: 1;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  iframe {
+    width: 100%;
+  }
 }
 
 nav {
   width: 100%;
   /* border: 2px solid salmon; */
   display: block;
-}
-
-.single {
-  columns: 1;
-}
-
-.double {
-  columns: 2;
-}
-
-.triple {
-  columns: 3;
 }
 
 ul,
