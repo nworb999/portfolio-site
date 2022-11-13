@@ -38,18 +38,37 @@ p {
   width: 100%;
 }
 
-@media only screen and (min-width: 1000px) {
-  .left {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    padding: 40px;
+iframe {
+  width: 50%;
+  margin: 10px;
+}
+
+@media (max-width: 1000px) {
+  .right-content {
+    flex-direction: column;
   }
-  .left,
-  .right {
-    display: inline-block;
-    vertical-align: top;
+
+  .single,
+  .double,
+  .triple {
+    columns: 1;
   }
+
+  iframe {
+    width: 100%;
+  }
+}
+
+.left {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 40px;
+}
+.left,
+.right {
+  display: inline-block;
+  vertical-align: top;
 }
 
 nav {
