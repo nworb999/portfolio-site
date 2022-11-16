@@ -14,6 +14,14 @@ body {
   font-size: 1rem;
 }
 
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-style: italic;
+}
+
 /* containers */
 .container {
   display: -webkit-box;
