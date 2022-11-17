@@ -159,7 +159,7 @@ ul.content {
   .left {
     flex: 1 100px;
     padding: 20px;
-    font-size: 0.5rem;
+    font-size: 0.75rem;
   }
 
   .single,
