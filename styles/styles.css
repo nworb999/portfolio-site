@@ -23,6 +23,10 @@ figcaption {
   font-size: 0.9rem;
 }
 
+ul {
+  margin-left: 1rem;
+}
+
 /* containers */
 .container {
   display: -webkit-box;
@@ -185,8 +189,8 @@ nav {
   display: block;
 }
 
-ul,
-nav {
+nav,
+nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
