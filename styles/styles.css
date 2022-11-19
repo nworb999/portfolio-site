@@ -23,6 +23,10 @@ figcaption {
   font-size: 0.9rem;
 }
 
+ul {
+  margin-left: 1rem;
+}
+
 /* containers */
 .container {
   display: -webkit-box;
@@ -55,7 +59,7 @@ figcaption {
 }
 
 .right a {
-  color: blue;
+  color: black;
 }
 
 .right p {
@@ -159,7 +163,7 @@ ul.content {
   .left {
     flex: 1 100px;
     padding: 20px;
-    font-size: 0.5rem;
+    font-size: 0.75rem;
   }
 
   .single,
@@ -185,8 +189,8 @@ nav {
   display: block;
 }
 
-ul,
-nav {
+nav,
+nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
