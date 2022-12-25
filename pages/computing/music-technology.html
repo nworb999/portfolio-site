@@ -104,43 +104,25 @@
           <p class="content">
             <strong>flowing water</strong>
             <em>(2022 - present)</em> is a work-in-progress musical interface
-            inspired by the famous guqin tune, <strong>流水</strong>, or
-            "Flowing Water". In modern renditions of the song, there is a
-            section comprised entirely of <strong>滾拂</strong>, or
+            inspired by the famous guqin tune <strong>流水</strong>, or "Flowing
+            Water". In modern renditions of the song, there is a section
+            comprised entirely of <strong>滾拂</strong>, or
             <a
               href="https://www.youtube.com/watch?v=B8F0G4QEQYg&t=224s&ab_channel=luna788"
               >glissando</a
             >, reminiscent of water flowing through a rocky stream. <br /><br />
             The synth is essentially an arpeggiator that emulates the texture of
-            <strong>滾拂</strong>. The chord is controlled by the position of a
-            rock in a stream. Modeled on the standard tuning of the guqin, the
-            app quantizes the browser window into seven different quadrants
-            associated with the open string note of each guqin string on the
-            x-axis, along with a continuous range of frequencies along each
-            string to represent the sliding of the finger. Using the Web Audio
-            API, a continuous arpeggiation will play and will update with every
-            drag of the rock across the screen.
+            <strong>滾拂</strong>. The chord is controlled by the X, Y position
+            of a rock in a stream, which will emulate the press/slide notes of a
+            finger by modifying the pitch of a single note in the chord. Modeled
+            on the standard tuning of the guqin, the app quantizes the browser
+            window into seven different quadrants associated with the open
+            string note of each guqin string on the X-axis, along with a
+            continuous range of frequencies along the Y-axis of each quadrant to
+            represent the sliding of the finger along the string. Using the Web
+            Audio API, the arpeggiator will play and update with every drag of
+            the rock across the screen.
           </p>
-          <p>
-            <strong>v0.0</strong> is the current version, where the rock
-            controls the pitch based on it's position on the screen's x-axis,
-            quantized to the frequencies of the seven open string notes.
-            <br /><br />
-            <strong>v0.99</strong> will involve y-axis interaction, with a
-            continuous range of frequencies along each string. <br /><br />
-            <strong>v1.0</strong> will introduce the arpeggiator.<br /><br />
-            <strong>v2.0</strong> will introduce a more stylized skin and 3d
-            elements as well as animation to bring to life the movement of the
-            stream.
-          </p>
-          <figure>
-            <img class="content" src="/public/rock.png" />
-          </figure>
-        </div>
-        <div class="double">
-          <figure>
-            <img class="content" src="/public/rock.png" />
-          </figure>
           <ul class="content">
             <h3>relevant links</h3>
             <li>
@@ -153,15 +135,49 @@
             </li>
             <li>
               <a href="https://www.youtube.com/watch?v=YHVt-xAaq-4"
-                >Guan Pinghu rendition of "Flowing Water" (featured on The
+                >Guan Pinghu rendition of <strong>流水</strong> (featured on The
                 Voyager Golden Record)
               </a>
             </li>
             <li>
               <a
                 href="https://www.youtube.com/watch?v=84rCZPIMjxM&ab_channel=PeiyouChang"
-                >滾拂 technique demonstration</a
+                ><strong>滾拂</strong> technique demonstration</a
               >
+            </li>
+          </ul>
+
+          <figure>
+            <img class="content" src="/public/rock.png" />
+          </figure>
+        </div>
+        <div class="double">
+          <figure>
+            <img class="content" src="/public/rock.png" />
+          </figure>
+          <ul class="content">
+            <h3>release plan</h3>
+            <li>
+              <strong>v0.0</strong> is the current version, where the rock
+              controls the pitch based on its position on the screen's X-axis,
+              quantized to the frequencies of the seven open string notes.
+            </li>
+            <li>
+              <strong>v0.99</strong> will involve Y-axis interaction, with a
+              continuous range of frequencies along each string.
+            </li>
+            <li>
+              <strong>v1.0</strong> will introduce the arpeggiator and a basic
+              background.
+            </li>
+            <li>
+              <strong>v2.0</strong> will introduce a more stylized skin and 3d
+              elements as well as animation to bring to life the movement of the
+              stream.
+            </li>
+            <li>
+              <strong>v3.0</strong> will introduce the ability to customize the
+              notes and slide range of the chord.
             </li>
           </ul>
         </div>
