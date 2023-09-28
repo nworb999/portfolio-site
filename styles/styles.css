@@ -27,6 +27,11 @@ ul {
   margin-left: 1rem;
 }
 
+video {
+  display: block;
+  margin: auto;
+}
+
 /* containers */
 .container {
   display: -webkit-box;
