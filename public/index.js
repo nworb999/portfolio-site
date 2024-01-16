@@ -2,6 +2,7 @@ function setActiveLink() {
   var currentPath = window.location.pathname;
   var navLinks = document.querySelectorAll("nav a");
 
+  // opens correct menu on page load
   navLinks.forEach(function (link) {
     if (link.getAttribute("href") === currentPath) {
       link.classList.add("active");
@@ -22,7 +23,22 @@ function setActiveLink() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("/navigation.html")
+  fetch("/components/burger.html")
+    .then((response) => response.text())
+    .then((text) => {
+      document.getElementById("burger-placeholder").innerHTML = text;
+    })
+    .then(() => {
+      const burger = document.getElementById("burger-menu");
+      if (burger) {
+        burger.addEventListener("click", function (e) {
+          var menu = document.getElementById("menu-items");
+          menu.classList.toggle("menu-active");
+        });
+      }
+    });
+
+  fetch("/components/navigation.html")
     .then((response) => response.text())
     .then((text) => {
       document.getElementById("nav-placeholder").innerHTML = text;
@@ -32,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var acc = document.getElementsByClassName("menu-trigger");
       var i;
 
+      // handle click menus open
       for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function (e) {
           var current = document.getElementsByClassName("active");
@@ -50,23 +67,3 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 });
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   var acc = document.getElementsByClassName("menu-trigger");
-//   var i;
-
-//   for (i = 0; i < acc.length; i++) {
-//     acc[i].addEventListener("click", function (e) {
-//       var current = document.getElementsByClassName("active");
-//       current[0].className = current[0].className.replace(" active", "");
-//       this.className += " active";
-//       this.classList.toggle("active");
-//       var panel = this.nextElementSibling;
-//       if (panel.style.display === "block") {
-//         panel.style.display = "none";
-//       } else {
-//         panel.style.display = "block";
-//       }
-//     });
-//   }
-// });
