@@ -274,12 +274,12 @@ nav li:last-child {
 
 .menu-items li {
   padding: 10px;
-  border-bottom: 1px solid #ddd;
+  /* border-bottom: 1px solid #ddd; */
 }
 
 .menu-items li a {
   text-decoration: none;
-  color: #333;
+  /* color: #333; */
 }
 
 /* Add a class when menu is active */

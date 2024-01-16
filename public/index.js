@@ -26,7 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("/components/burger.html")
     .then((response) => response.text())
     .then((text) => {
-      document.getElementById("burger-placeholder").innerHTML = text;
+      const burgerHolder = document.getElementById("burger-placeholder");
+      if (burgerHolder) {
+        burgerHolder.innerHTML = text;
+      }
     })
     .then(() => {
       const burger = document.getElementById("burger-menu");
@@ -41,7 +44,10 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("/components/navigation.html")
     .then((response) => response.text())
     .then((text) => {
-      document.getElementById("nav-placeholder").innerHTML = text;
+      const navHolder = document.getElementById("nav-placeholder");
+      if (navHolder) {
+        navHolder.innerHTML = text;
+      }
       setActiveLink();
     })
     .then(() => {
