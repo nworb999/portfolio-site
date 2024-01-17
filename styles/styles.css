@@ -87,10 +87,12 @@ video {
 
 .content {
   display: block;
+  justify-content: center;
+  align-items: center; 
   width: 100%;
   padding: 1rem;
-  padding-left: 0rem;
-  padding-right: 2rem;
+  /* padding-left: 0rem;
+  padding-right: 2rem; */
 }
 
 ul.content {
@@ -99,6 +101,18 @@ ul.content {
 
 .content li {
   margin: 1rem;
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 500px; /* Adjust the height as needed */
+}
+
+iframe {
+  width: 100%; /* Adjust the width as needed, or set a max-width */
+  height: 100%; /* This will make the iframe take the full height of its container */
 }
 
 /* wide */
@@ -186,6 +200,11 @@ ul.content {
   iframe {
     width: 80%;
   }
+
+  .content {
+    padding: 2rem;
+    padding-left: 0rem;
+  }
 }
 
 /* nav */
@@ -247,4 +266,41 @@ nav a {
 
 nav li:last-child {
   margin-bottom: 0;
+}
+
+
+/* burger */
+.burger-menu {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+  display: none;
+}
+
+.menu-items li {
+  padding: 10px;
+  /* border-bottom: 1px solid #ddd; */
+}
+
+.menu-items li a {
+  text-decoration: none;
+  /* color: #333; */
+}
+
+.menu-active {
+  display: block;
 }
