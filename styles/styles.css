@@ -87,10 +87,12 @@ video {
 
 .content {
   display: block;
+  justify-content: center;
+  align-items: center; 
   width: 100%;
   padding: 1rem;
-  padding-left: 0rem;
-  padding-right: 2rem;
+  /* padding-left: 0rem;
+  padding-right: 2rem; */
 }
 
 ul.content {
@@ -99,6 +101,18 @@ ul.content {
 
 .content li {
   margin: 1rem;
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 500px; /* Adjust the height as needed */
+}
+
+iframe {
+  width: 100%; /* Adjust the width as needed, or set a max-width */
+  height: 100%; /* This will make the iframe take the full height of its container */
 }
 
 /* wide */
@@ -185,6 +199,10 @@ ul.content {
 
   iframe {
     width: 80%;
+  }
+
+  .content {
+    padding: 2rem;
   }
 }
 
@@ -282,7 +300,6 @@ nav li:last-child {
   /* color: #333; */
 }
 
-/* Add a class when menu is active */
 .menu-active {
   display: block;
 }

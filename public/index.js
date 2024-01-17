@@ -32,6 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     })
     .then(() => {
+      const icons = document.querySelectorAll(".icon");
+      if (icons) {
+        icons.forEach((icon) => {
+          icon.addEventListener("click", (event) => {
+            icon.classList.toggle("open");
+          });
+        });
+      }
+
       const burger = document.getElementById("burger-menu");
       if (burger) {
         burger.addEventListener("click", function (e) {
