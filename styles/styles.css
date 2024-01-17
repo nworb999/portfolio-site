@@ -203,6 +203,7 @@ iframe {
 
   .content {
     padding: 2rem;
+    padding-left: 0rem;
   }
 }
 
