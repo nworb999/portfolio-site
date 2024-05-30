@@ -11,7 +11,7 @@ body {
   -webkit-font-smoothing: antialiased;
   margin: 0;
   padding: 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 figure {
@@ -20,7 +20,7 @@ figure {
 
 figcaption {
   font-style: italic;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 ul {
@@ -70,13 +70,14 @@ video {
 .right p {
   text-align: justify;
   text-justify: inter-word;
+  padding: 2rem;
 }
 
 .right .single,
 .double,
 .triple {
   margin-top: 4px;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .stacked {
